@@ -38,10 +38,27 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-section {
-  padding: 50px 100px;
+html {
+  overflow-x: hidden;
 }
 
+/* button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  background: var(--orange);
+  color: var(--white);
+  padding: 0.8rem 2.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #ff983f;
+}
+
+/* navbar */
 header {
   position: fixed;
   width: 100%;
@@ -54,19 +71,15 @@ header {
   background: var(--white);
   padding: 15px 100px;
 }
-
 .logo img {
   width: 100px;
 }
-
 .navbar {
   display: flex;
 }
-
 .navbar li {
   position: relative;
 }
-
 .navbar a {
   font-size: 1rem;
   padding: 10px 20px;
@@ -74,53 +87,116 @@ header {
   font-weight: 500;
   color: var(--black);
 }
-
 .navbar a::after {
+  position: absolute;
   content: "";
   width: 0;
   height: 3px;
   background: var(--gradient);
-  position: absolute;
   bottom: -14px;
   left: 0;
   transition: 0.5s;
 }
-
 .navbar a:hover::after {
   width: 100%;
 }
-
 #menu-icon {
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 10001;
   display: none;
 }
-
 header.active {
   box-shadow: var(--box-shadow);
   padding: 1.2rem 9%;
 }
 
+section {
+  padding: 50px 100px;
+}
+
+/* beranda */
+.beranda {
+  display: grid;
+  gap: 2rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.beranda .text {
+  text-align: left;
+}
+
+.beranda .text h1 {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 3rem;
+}
+
+.beranda .text span {
+  color: var(--orange);
+}
+
+.beranda .text h1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1rem;
+  height: 4px;
+  width: 2.5rem;
+  background-color: var(--black);
+}
+
+.beranda .text p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.75rem;
+}
+
+.beranda .image img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
 /* responsive */
 @media (max-width: 1061px) {
   html {
-    font-size: 80%;
+    font-size: 60%;
   }
   header {
     padding: 18px 40px;
   }
+  section {
+    padding: 50px 100px;
+  }
 }
 
-@media (max-width: 931px) {
+@media (max-width: 799px) {
+  html {
+    font-size: 60%;
+  }
+
   header {
     padding: 12px 40px;
   }
 
+  section {
+    padding: 50px 100px;
+  }
+
+  /* navbar */
   #menu-icon {
     display: block;
   }
-
   header .navbar {
     position: absolute;
     top: 99%;
@@ -152,18 +228,24 @@ header.active {
   .navbar a::after {
     display: none;
   }
-
   #menu-icon.fa-xmark {
     transform: rotate(180deg);
   }
-
   header.active {
     padding: 0.8rem;
+  }
+
+  .beranda {
+    gap: 2rem 0;
   }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  section {
+    padding: 50px 100px;
   }
 }
