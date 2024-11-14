@@ -112,7 +112,7 @@ header.active {
 }
 
 section {
-  padding: 50px 100px;
+  padding: 60px 100px 0 100px;
 }
 
 /* beranda */
@@ -128,8 +128,8 @@ section {
 }
 .beranda .text {
   text-align: left;
+  padding-left: 2rem;
 }
-
 .beranda .text h1 {
   position: relative;
   isolation: isolate;
@@ -139,11 +139,6 @@ section {
   color: var(--black);
   line-height: 3rem;
 }
-
-.beranda .text span {
-  color: var(--orange);
-}
-
 .beranda .text h1::before {
   position: absolute;
   content: "";
@@ -153,18 +148,71 @@ section {
   width: 2.5rem;
   background-color: var(--black);
 }
-
 .beranda .text p {
   margin-bottom: 1rem;
   font-weight: 500;
   color: var(--black);
   line-height: 1.75rem;
 }
-
 .beranda .image img {
   max-width: 100%;
   height: auto;
   margin: 1rem 0;
+}
+.beranda .btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
+}
+
+span {
+  color: var(--orange);
+}
+
+/* service */
+.services {
+  text-align: center;
+  padding: 50px 30px;
+  background: var(--light);
+}
+.services h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.services .fa-star {
+  padding: 0 1rem;
+}
+.services-grid {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: repeat(4, 1fr); /* Membuat 6 kolom */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service {
+  background: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: --box-shadow;
+  transition: transform 0.3s;
+}
+.service img {
+  width: 60px; /* Ukuran lebih kecil agar pas di grid */
+  height: 60px;
+  margin-bottom: 15px;
+}
+.service h3 {
+  font-size: 1rem;
+  color: var(--black);
+}
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* responsive */
@@ -176,7 +224,7 @@ section {
     padding: 18px 40px;
   }
   section {
-    padding: 50px 100px;
+    padding: 50px 5% 0 5%;
   }
 }
 
@@ -190,7 +238,7 @@ section {
   }
 
   section {
-    padding: 50px 100px;
+    padding: 10% 9%;
   }
 
   /* navbar */
@@ -235,17 +283,50 @@ section {
     padding: 0.8rem;
   }
 
+  /* beranda */
   .beranda {
-    gap: 2rem 0;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .beranda .text h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .beranda .text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .beranda .btn {
+    font-size: 1.5rem;
+  }
+
+  /* service */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
   }
 
   section {
-    padding: 50px 100px;
+    padding: 50px 10%;
+  }
+
+  /* beranda */
+  .beranda .text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .beranda .text p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  /* service */
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }
