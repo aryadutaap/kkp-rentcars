@@ -6,7 +6,8 @@
   --black: #000;
   --light: #eeeff1;
   --white: #ffff;
-  --gradient: linear-gradient(to bottom, #ff6600, #ff983f);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --gradient: linear-gradient(to bottom, rgba(255, 102, 0, 0.9), rgba(255, 152, 63, 0.9));
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -69,10 +70,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--white);
-  padding: 15px 100px;
+  padding: 1.5rem 2rem;
 }
 .logo img {
-  width: 100px;
+  width: 125px;
 }
 .navbar {
   display: flex;
@@ -135,7 +136,6 @@ section {
   isolation: isolate;
   margin-bottom: 2rem;
   font-size: 3rem;
-  font-weight: 700;
   color: var(--black);
   line-height: 3rem;
 }
@@ -160,10 +160,14 @@ section {
   margin: 1rem 0;
 }
 .beranda .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: var(--box-shadow);
 }
-
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
 span {
   color: var(--orange);
 }
@@ -171,24 +175,23 @@ span {
 /* service */
 .services {
   text-align: center;
-  padding: 50px 30px;
+  padding: 20px 30px;
   background: var(--light);
 }
 .services h1 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin: 1rem;
   color: var(--black);
-  text-transform: uppercase;
 }
 .services .fa-star {
   padding: 0 1rem;
+  color: var(--orange);
 }
 .services-grid {
   display: grid;
-  padding: 1rem 0;
-  grid-template-columns: repeat(4, 1fr); /* Membuat 6 kolom */
-  gap: 20px;
+  padding: 2rem 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -202,9 +205,9 @@ span {
   transition: transform 0.3s;
 }
 .service img {
-  width: 60px; /* Ukuran lebih kecil agar pas di grid */
-  height: 60px;
-  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
 }
 .service h3 {
   font-size: 1rem;
@@ -212,38 +215,155 @@ span {
 }
 .service:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--box-shadow);
+  background: var(--orange);
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 3.2rem;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* card-cars */
+.card-cars .heading {
+  padding: 2rem;
+}
+.slider .wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.slider .wrapper .slide {
+  cursor: pointer;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 15.5%;
+  height: 100%;
+  color: var(--black);
+  z-index: 1;
+  width: 9%;
+  background: var(--white);
+}
+.slider .wrapper .slide#prevBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider .wrapper .slide#nextBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.slider .wrapper .wrapper2 {
+  width: 66vw;
+  overflow-x: hidden;
+  margin-left: 10vw;
+}
+.slider .wrapper .wrapper-box {
+  display: flex;
+  gap: 2rem;
+}
+.slider .wrapper .wrapper-box .box {
+  text-align: center;
+  border: var(--border);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  background: var(--gradient);
+}
+.slider .wrapper .wrapper-box .box img {
+  width: 15.75vw;
+}
+.slider .wrapper .wrapper-box .box h3 {
+  padding: 1rem 0;
+}
+.slider .wrapper .wrapper-box .box:hover img {
+  transform: scale(1.1);
+}
+.slider .wrapper .wrapper-box .box .car-info {
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.slider .wrapper .wrapper-box .box .car-info .price {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+}
+.slider .wrapper .wrapper-box .box .btn {
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background-color: var(--darkblue);
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.slider .wrapper .wrapper-box .box .btn:hover {
+  background-color: var(--black);
+}
+.card-cars .btn-all-cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.card-cars .btn-all-cars .detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 2px solid var(--orange);
+  border-radius: 2rem;
+  color: var(--darkblue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.card-cars .btn-all-cars:hover {
+  transform: scale(1.1);
 }
 
 /* responsive */
-@media (max-width: 1061px) {
+@media (max-width: 1024px) {
   html {
-    font-size: 60%;
-  }
-  header {
-    padding: 18px 40px;
+    font-size: 65%;
   }
   section {
-    padding: 50px 5% 0 5%;
+    padding: 2rem;
+  }
+  /* logo header */
+  .logo img {
+    width: 100px;
+  }
+
+  /* card-cars */
+  .slider .wrapper .slide {
+    width: 13%;
+  }
+  .slider .wrapper .wrapper2 {
+    margin-left: 15.75vw;
+  }
+  .slider .wrapper .wrapper-box {
+    gap: 2.5rem;
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 768px) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
-
-  header {
-    padding: 12px 40px;
-  }
-
-  section {
-    padding: 10% 9%;
-  }
-
   /* navbar */
   #menu-icon {
     display: block;
+    padding: 1.5rem;
   }
   header .navbar {
     position: absolute;
@@ -258,6 +378,7 @@ span {
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+
   .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -289,12 +410,12 @@ span {
     gap: 1rem;
   }
   .beranda .text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 2.5rem;
   }
   .beranda .text p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.8 rem;
   }
   .beranda .btn {
     font-size: 1.5rem;
@@ -304,29 +425,120 @@ span {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* card-cars */
+  .slider .wrapper .wrapper2 {
+    width: 100%;
+    margin: auto;
+    margin-left: 0.25rem;
+  }
+  .slider .wrapper .slide#prevBtn {
+    left: 12;
+  }
+  .slider .wrapper .slide#nextBtn {
+    right: 12;
+  }
+  .slider .wrapper .wrapper2 .wrapper-box .box {
+    display: none;
+    border-radius: 1.5rem;
+  }
+  .slider .wrapper .wrapper2 .wrapper-box .box.active {
+    display: block;
+    padding-bottom: 4rem;
+  }
+  .slider .wrapper .wrapper2 .wrapper-box .box.active img {
+    width: 35vw;
+  }
+  .slider .wrapper .slide {
+    padding-top: 25%;
+  }
+  .slider .wrapper .wrapper-box .box h3 {
+    font-size: 2.5rem;
+  }
+  .slider .wrapper .wrapper-box .box .car-info {
+    padding-top: 2rem;
+    font-size: 1.45rem;
+  }
+  .slider .wrapper .wrapper-box .box .car-info .price {
+    font-size: 2rem;
+  }
+  .slider .wrapper .wrapper-box .box .btn {
+    bottom: 2px;
+    font-size: 1.6rem;
+  }
+  .card-cars .btn-all-cars {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .card-cars .btn-all-cars {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 
-  section {
-    padding: 50px 10%;
+  /* logo header */
+  .logo img {
+    width: 60px;
   }
 
   /* beranda */
   .beranda .text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 2rem;
   }
   .beranda .text p {
     font-size: 0.9rem;
     line-height: 1.4rem;
   }
+  .beranda .btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
 
   /* service */
+  .services {
+    padding: 20px 50px;
+  }
+  .services h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
   .services-grid {
     grid-template-columns: 1fr;
+  }
+  .service img {
+    margin: 0;
+  }
+
+  /* card-cars */
+  .card-cars .slider .wrapper .slide {
+    padding-top: 40%;
+  }
+  .slider .wrapper .slide {
+    font-size: 3.5rem;
+    width: 5%;
+  }
+  .slider .wrapper .wrapper2 .wrapper-box .box.active img {
+    width: 40vw;
+  }
+  .slider .wrapper .wrapper-box .box h3 {
+    font-size: 2rem;
+  }
+  .slider .wrapper .wrapper-box .box .car-info {
+    font-size: 1.25rem;
+  }
+  .slider .wrapper .wrapper-box .box .car-info .price {
+    font-size: 1.75rem;
+  }
+  .slider .wrapper .wrapper-box .box .btn {
+    font-size: 1.3rem;
+  }
+  .card-cars .btn-all-cars {
+    font-size: 1.25rem;
   }
 }
