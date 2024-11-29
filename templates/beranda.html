@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- import css -->
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
 
     <title>NASARENTCARS</title>
   </head>
@@ -17,7 +17,7 @@
       <ul class="navbar">
         <li><a href="#beranda">Beranda</a></li>
         <li><a href="#daftarmobil">Daftar Mobil</a></li>
-        <li><a href="#snk">Syarat & Ketentuan</a></li>
+        <li><a href="#syaratpesan">Syarat & Ketentuan</a></li>
         <li><a href="#carapesan">cara Pesan</a></li>
         <li><a href="#tetangkami">Tentang Kami</a></li>
       </ul>
@@ -57,7 +57,7 @@
         </div>
         <div class="service">
           <img src="/static/img/icon/free-shuttle-car.png" alt="Gratis Antar Jemput" />
-          <h3>Gratis Antar Jemput</h3>
+          <h3>Gratis Antar Jemput Mobil</h3>
         </div>
       </div>
     </section>
@@ -140,6 +140,87 @@
           <div class="fa-solid fa-circle-arrow-right next-newPage"></div>
         </div>
       </a>
+    </section>
+
+    <!-- syarat & cara section -->
+    <section class="syarat-cara" id="syarat-cara">
+      <div class="card-syarat-cara">
+        <div class="tab">
+          <a href="#syaratpesan" class="btn" id="btn-syarat" onclick="showSyarat()">Syarat dan Ketentuan</a>
+          <a href="#carapesan" class="btn" id="btn-cara" onclick="showCara()">Cara Pemesanan</a>
+        </div>
+        <div class="tab-content">
+          <!-- syarat dan ketentuan -->
+          <div id="syarat">
+            <h1>Syarat dan Ketentuan</h1>
+            <ul>
+              <li>1. Foto asli e-KTP, NPWP, SIM</li>
+              <li>2. Foto PBB/Bukti Sewa Tempat Tinggal dan SIUP</li>
+              <li>3. Foto ID kantor/Ket kerja/KTM, KRS</li>
+              <li>4. Mencantumkan akun sosial media</li>
+              <li>5. Mencantumkan 2 nomor telepon lain yang dapat dihubungi</li>
+              <li>6. Memberikan jaminan motor + STNK (foto STNK)</li>
+              <li>7. Foto Kartu Keluarga</li>
+              <li>8. Follow Instagram kami <span>@NASARENTCARS</span></li>
+            </ul>
+            <p>
+              <i>
+                * Jika ada data yang kurang, bisa diganti dengan data lain.<br />
+                * Kelebihan jam pemakaian charge 10%/jam.
+              </i>
+            </p>
+          </div>
+
+          <!-- cara pemesanan -->
+          <div id="cara" style="display: none">
+            <h1>Cara Pemesanan</h1>
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="/static/img/icon/choice-car.png" alt="Pilih Mobil" />
+                <div class="desc-cara">
+                  <h3>Pilih Mobil</h3>
+                  <p>Pilih mobil yang sesuai dengan kebutuhan Anda dari daftar mobil yang tersedia.</p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="/static/img/icon/calendar-pick.png" alt="Cek Tanggal" />
+                <div class="desc-cara">
+                  <h3>Cek dan Pilih Tanggal</h3>
+                  <p>Periksa ketersediaan dan pilih tanggal sewa yang diinginkan.</p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="/static/img/icon/requirement.png" alt="Baca Syarat" />
+                <div class="desc-cara">
+                  <h3>Baca Syarat dan Ketentuan</h3>
+                  <p>Pastikan Anda membaca dan memahami syarat serta ketentuan sewa.</p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="/static/img/icon/contact.png" alt="Hubungi Kami" />
+                <div class="desc-cara">
+                  <h3>Hubungi Kami</h3>
+                  <p>Hubungi kami melalui kontak yang tersedia untuk melakukan pemesanan.</p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="/static/img/icon/payment.png" alt="Pembayaran" />
+                <div class="desc-cara">
+                  <h3>Lakukan Pembayaran</h3>
+                  <p>Selesaikan pembayaran sesuai dengan metode yang telah disepakati.</p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="/static/img/icon/the-cars.png" alt="Mobil Siap" />
+                <div class="desc-cara">
+                  <h3>Mobil Siap Digunakan</h3>
+                  <p>Setelah pembayaran terkonfirmasi, mobil akan siap untuk Anda gunakan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- font awesome -->

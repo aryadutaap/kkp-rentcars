@@ -62,3 +62,14 @@ let changeBox = () => {
     }
   }
 };
+
+// syarat & cara pesan
+function showSyarat() {
+  document.getElementById("syarat").style.display = "block";
+  document.getElementById("cara").style.display = "none";
+}
+
+function showCara() {
+  document.getElementById("syarat").style.display = "none";
+  document.getElementById("cara").style.display = "block";
+}
