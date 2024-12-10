@@ -508,6 +508,63 @@ i {
   border-radius: 0.5rem;
 }
 
+/* footer */
+.footer {
+  background: var(--darkblue);
+  color: var(--white);
+  padding: 50px;
+}
+.footer .footer-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+.footer .footer-box-container .box {
+  padding: 0 1rem;
+}
+.footer .footer-box-container .box h3 {
+  font-size: 1.1rem;
+  padding-bottom: 1.5rem;
+}
+.footer .footer-box-container .box p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.footer .footer-box-container .box ul li {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-box-container .box ul li p {
+  padding-left: 1rem;
+}
+.footer .footer-box-container .box .pembayaran img {
+  max-width: 225px;
+}
+.footer .footer-box-container .box .pembayaran p {
+  font-size: 0.95rem;
+  padding: 1rem 0;
+}
+.footer .footer-box-container .box .btn {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+}
+.footer .footer-box-container .box .btn img {
+  width: 2rem;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+.footer .footer-box-container .box .sosmed {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer .footer-box-container .box .sosmed img {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* responsive */
 @media (max-width: 1024px) {
   html {
@@ -551,6 +608,11 @@ i {
   .location .map {
     width: 350px;
     height: 220px;
+  }
+
+  /* footer */
+  .footer .footer-box-container .box .pembayaran img {
+    max-width: 175px;
   }
 }
 
@@ -726,6 +788,20 @@ i {
   .location .row h3 {
     font-size: 2rem;
   }
+
+  /* footer */
+  .footer {
+    padding: 35px;
+  }
+  .footer .footer-box-container .box .pembayaran img {
+    max-width: 125px;
+  }
+  .footer .footer-box-container .box .btn {
+    font-size: 0.8rem;
+  }
+  .footer .footer-box-container .box .btn img {
+    width: 1.8rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -879,5 +955,16 @@ i {
   .location .map {
     width: 250px;
     height: 160px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 30px;
+  }
+  .footer .footer-box-container .box h3 {
+    font-size: 1.4rem;
+  }
+  .footer .footer-box-container .box .pembayaran img {
+    max-width: 100px;
   }
 }
