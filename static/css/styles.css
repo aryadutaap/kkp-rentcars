@@ -181,7 +181,7 @@ span {
   background: var(--light);
 }
 .services h1 {
-  margin: 1rem;
+  padding-top: 1rem;
   color: var(--black);
 }
 .services .fa-star {
@@ -190,7 +190,7 @@ span {
 }
 .services-grid {
   display: grid;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   max-width: 1200px;
@@ -208,12 +208,10 @@ span {
 .service img {
   width: 80px;
   height: 80px;
-  margin-bottom: 1rem;
 }
 .service h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--black);
-  padding-top: 2rem;
   padding-bottom: 0;
 }
 .service:hover {
@@ -236,7 +234,7 @@ h3 {
 
 /* card-cars */
 .card-cars .heading {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 .slider .wrapper {
   position: relative;
@@ -499,7 +497,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 .location .map {
   width: 450px;
@@ -524,7 +522,7 @@ i {
 }
 .footer .footer-box-container .box h3 {
   font-size: 1.1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
 }
 .footer .footer-box-container .box p {
   font-size: 0.9rem;
@@ -685,6 +683,17 @@ i {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .services-grid .service {
+    margin: 0 0.5rem;
+    padding: 1.5rem;
+  }
+  .services-grid .service img {
+    width: 70px;
+    height: 70px;
+  }
+  .services-grid .service h3 {
+    font-size: 1.25rem;
+  }
 
   /* card-cars */
   .card-cars .heading {
@@ -782,8 +791,12 @@ i {
 
   /* location */
   .location .col {
-    gap: 1.5rem;
+    gap: 4em;
     padding-top: 2rem;
+  }
+  .location .map {
+    width: 300px;
+    height: 200px;
   }
   .location .row h3 {
     font-size: 2rem;
@@ -840,12 +853,15 @@ i {
   .services-grid {
     grid-template-columns: 1fr;
   }
-  .service {
-    margin: 0 2rem;
-    padding: 1.5rem 0;
+  .services-grid .service {
+    margin: 0 3rem;
   }
-  .service img {
-    margin: 0;
+  .services-grid .service img {
+    width: 50px;
+    height: 50px;
+  }
+  .services-grid .service h3 {
+    font-size: 1.1rem;
   }
 
   /* card-cars */
@@ -953,8 +969,8 @@ i {
     font-size: 1.6rem;
   }
   .location .map {
-    width: 250px;
-    height: 160px;
+    width: 225px;
+    height: 140px;
   }
 
   /* footer */
