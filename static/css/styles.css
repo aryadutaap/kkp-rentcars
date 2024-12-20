@@ -262,7 +262,7 @@ h3 {
   right: 0;
 }
 .slider .wrapper .wrapper2 {
-  width: 66vw;
+  width: 67.5vw;
   overflow-x: hidden;
   margin-left: 10vw;
 }
@@ -514,7 +514,7 @@ i {
 }
 .footer .footer-box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .footer .footer-box-container .box {
@@ -561,6 +561,71 @@ i {
 .footer .footer-box-container .box .sosmed img {
   width: 2rem;
   height: 2rem;
+}
+
+/* daftar mobil */
+
+/* drop down */
+.dropdown-btn {
+  margin-top: 5rem;
+  padding: 50px 50px 35px;
+  display: flex;
+  gap: 2.5rem;
+  background-color: var(--light);
+}
+.dropdown-btn .dropdown .select {
+  display: flex;
+  width: 220px;
+  height: 3rem;
+  padding: 1.25rem;
+  background: var(--darkblue);
+  font-weight: 500;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.select i {
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+.dropdown .select span,
+.dropdown .select i {
+  color: var(--white);
+}
+.dropdown.active .select i {
+  transform: rotate(-180deg);
+}
+.dropdown .options {
+  position: relative;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background: var(--darkblue);
+  box-shadow: var(--box-shadow);
+  display: none;
+}
+.dropdown.active .options {
+  display: block;
+}
+.options li {
+  display: flex;
+  height: 2.5rem;
+  cursor: pointer;
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+  align-items: center;
+  background: var(--darkblue);
+}
+.options li:hover {
+  filter: brightness(150%);
+}
+.options li span {
+  color: var(--white);
+  font-weight: 400;
 }
 
 /* responsive */
