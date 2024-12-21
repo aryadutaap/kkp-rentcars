@@ -4,6 +4,7 @@
   --orange: #ff6600;
   --orange2: #ff761a;
   --darkblue: #10375c;
+  --softblue: #99aabe;
   --gray: #3d454a;
   --black: #000;
   --light: #eeeff1;
@@ -677,6 +678,45 @@ i {
 }
 .allcard-cars .box .btn:hover {
   background-color: var(--black);
+}
+
+/* caption slider */
+.capt-slider {
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.capt-slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.capt-slider .slides .slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.capt-slider .slides .slide .desc-slide {
+  display: grid;
+  gap: 0 2rem;
+  padding: 7rem;
+  position: relative;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  background: var(--softblue);
+  border-radius: 1.5rem;
+}
+.capt-slider .slides .slide .desc-slide img {
+  max-width: 200px;
+}
+.capt-slider .slides .slide .desc-slide p {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 /* responsive */
