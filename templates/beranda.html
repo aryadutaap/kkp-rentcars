@@ -17,8 +17,8 @@
       <ul class="navbar">
         <li><a href="beranda.html">Beranda</a></li>
         <li><a href="daftar-mobil.html">Daftar Mobil</a></li>
-        <li><a href="#syaratpesan">Syarat & Ketentuan</a></li>
-        <li><a href="#carapesan">cara Pesan</a></li>
+        <li><a href="#btn-syaratpesan" onclick="showSyarat()">Syarat & Ketentuan</a></li>
+        <li><a href="#btn-carapesan" onclick="showCara()">cara Pesan</a></li>
         <li><a href="#tetangkami">Tentang Kami</a></li>
       </ul>
     </header>
@@ -71,16 +71,6 @@
           <div class="wrapper2">
             <div class="wrapper-box">
               <div class="box active" id="box-car">
-                <h3>Brio 2018</h3>
-                <img src="/static/img/mobil/Brio-2018.png" alt="Brio 2018" />
-                <div class="car-info">
-                  <p>Kapasitas 7 Orang</p>
-                  <p class="price">Rp. 300.000/Hari</p>
-                </div>
-                <a href="#" class="btn">Pesan Sekarang</a>
-              </div>
-
-              <div class="box" id="box-car">
                 <h3>Brio 2019</h3>
                 <img src="/static/img/mobil/Brio-2019.png" alt="Brio 2018" />
                 <div class="car-info">
@@ -91,8 +81,8 @@
               </div>
 
               <div class="box" id="box-car">
-                <h3>Ertiga</h3>
-                <img src="/static/img/mobil/Ertiga.png" alt="Brio 2018" />
+                <h3>Brio 2018</h3>
+                <img src="/static/img/mobil/Brio-2018.png" alt="Brio 2018" />
                 <div class="car-info">
                   <p>Kapasitas 7 Orang</p>
                   <p class="price">Rp. 300.000/Hari</p>
@@ -101,17 +91,7 @@
               </div>
 
               <div class="box" id="box-car">
-                <h3>Honda Brio</h3>
-                <img src="/static/img/mobil/honda-brio.png" alt="Brio 2018" />
-                <div class="car-info">
-                  <p>Kapasitas 7 Orang</p>
-                  <p class="price">Rp. 300.000/Hari</p>
-                </div>
-                <a href="#" class="btn">Pesan Sekarang</a>
-              </div>
-
-              <div class="box" id="box-car">
-                <h3>New Avanza</h3>
+                <h3>New Avanza 2021</h3>
                 <img src="/static/img/mobil/New-Avanza.png" alt="Brio 2018" />
                 <div class="car-info">
                   <p>Kapasitas 7 Orang</p>
@@ -121,8 +101,28 @@
               </div>
 
               <div class="box" id="box-car">
-                <h3>Toyota Avanza</h3>
-                <img src="/static/img/mobil/Toyota-Avanza(2020-2022).png" alt="Brio 2018" />
+                <h3>Grand Avanza 2017</h3>
+                <img src="/static/img/mobil/New-Avanza.png" alt="Brio 2018" />
+                <div class="car-info">
+                  <p>Kapasitas 7 Orang</p>
+                  <p class="price">Rp. 300.000/Hari</p>
+                </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+              </div>
+
+              <div class="box" id="box-car">
+                <h3>New XL7 2023</h3>
+                <img src="/static/img/mobil/New-Avanza.png" alt="Brio 2018" />
+                <div class="car-info">
+                  <p>Kapasitas 7 Orang</p>
+                  <p class="price">Rp. 300.000/Hari</p>
+                </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+              </div>
+
+              <div class="box" id="box-car">
+                <h3>New Ertiga 2019</h3>
+                <img src="/static/img/mobil/Ertiga.png" alt="Brio 2018" />
                 <div class="car-info">
                   <p>Kapasitas 7 Orang</p>
                   <p class="price">Rp. 300.000/Hari</p>
@@ -147,12 +147,12 @@
     <section class="syarat-cara" id="syarat-cara">
       <div class="card-syarat-cara">
         <div class="tab">
-          <a href="#syaratpesan" class="btn" id="btn-syarat" onclick="showSyarat()">Syarat dan Ketentuan</a>
-          <a href="#carapesan" class="btn" id="btn-cara" onclick="showCara()">Cara Pemesanan</a>
+          <a href="#syaratpesan" class="btn" id="btn-syaratpesan" onclick="showSyarat()">Syarat dan Ketentuan</a>
+          <a href="#carapesan" class="btn" id="btn-carapesan" onclick="showCara()">Cara Pemesanan</a>
         </div>
         <div class="tab-content">
           <!-- syarat dan ketentuan -->
-          <div id="syarat">
+          <div id="syaratpesan">
             <h2>Syarat dan Ketentuan</h2>
             <ul>
               <li>1. Foto asli e-KTP, NPWP, SIM</li>
@@ -173,7 +173,7 @@
           </div>
 
           <!-- cara pemesanan -->
-          <div id="cara" style="display: none">
+          <div id="carapesan" style="display: none">
             <h2>Cara Pemesanan</h2>
             <div class="grid-container">
               <div class="grid-item">
