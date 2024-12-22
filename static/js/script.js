@@ -45,7 +45,7 @@ prevBtn.onclick = () => {
 };
 
 let changeBox = () => {
-  if (indexNo > activeBox.length - 1) {
+  if (indexNo >= activeBox.length) {
     indexNo = 0;
   } else if (indexNo < 0) {
     indexNo = activeBox.length - 1;

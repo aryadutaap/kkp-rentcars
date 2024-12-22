@@ -546,9 +546,9 @@ i {
 }
 .footer .footer-box-container .box .btn {
   margin: 0 0 1.5rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   font-size: 0.9rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
 }
 .footer .footer-box-container .box .btn img {
   width: 2rem;
@@ -682,9 +682,11 @@ i {
 
 /* caption slider */
 .capt-slider {
-  margin-top: 3rem;
+  margin: 3rem 0 2rem;
+  padding-bottom: 0;
   position: relative;
   overflow: hidden;
+  background: var(--softblue);
 }
 .capt-slider .slides {
   display: flex;
@@ -702,21 +704,111 @@ i {
 }
 .capt-slider .slides .slide .desc-slide {
   display: grid;
-  gap: 0 2rem;
-  padding: 7rem;
+  gap: 0 1rem;
+  padding: 2rem 150px;
   position: relative;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  justify-content: center;
-  background: var(--softblue);
-  border-radius: 1.5rem;
+  justify-items: center;
 }
 .capt-slider .slides .slide .desc-slide img {
-  max-width: 200px;
+  max-width: 150px;
 }
 .capt-slider .slides .slide .desc-slide p {
   font-size: 1.3rem;
   font-weight: 600;
+  width: 450px;
+}
+
+/* detail mobil */
+.car-detail {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+.car-detail .border-detail {
+  position: relative;
+  align-items: center;
+  margin: 0 6rem;
+  background-color: var(--white);
+  border: 2px solid var(--orange);
+  border-radius: 1.5rem;
+  box-shadow: var(--box-shadow);
+  justify-content: center;
+}
+.car-detail .border-detail h1 {
+  text-align: center;
+  margin: 2.25rem auto;
+}
+.car-detail .border-detail .content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.car-detail .border-detail .content-grid img {
+  width: 100%;
+  padding: 0 0 2rem 3rem;
+  display: block;
+}
+.car-detail .border-detail .content-grid .description {
+  line-height: 1.8;
+  font-size: 1rem;
+  padding: 1rem 3rem 2rem 0;
+}
+.car-detail .border-detail h3 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0;
+}
+.car-detail .border-detail .car-spec {
+  margin: 1rem 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.car-detail .border-detail .car-spec div {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  text-align: center;
+  display: grid;
+}
+.car-detail .border-detail .car-spec div i {
+  color: var(--orange);
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.car-detail .border-detail .pricing {
+  text-align: center;
+  margin: 2rem 300px;
+  padding: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 1rem;
+}
+.car-detail .border-detail .pricing h3 {
+  padding-bottom: 1rem;
+}
+.car-detail .border-detail .btn {
+  background-color: var(--orange2);
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 280px;
+  margin: 2.5rem auto;
+  padding: 1rem;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+}
+.car-detail .border-detail .btn img {
+  width: 2rem;
+  margin-left: 0.25rem;
+  vertical-align: middle;
 }
 
 /* responsive */

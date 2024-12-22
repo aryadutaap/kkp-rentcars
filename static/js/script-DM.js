@@ -62,4 +62,4 @@ function showNextSlide() {
   currentIndex = (currentIndex + 1) % totalSlides;
   slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
-setInterval(showNextSlide, 5000);
+setInterval(showNextSlide, 4000);
