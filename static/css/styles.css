@@ -519,48 +519,48 @@ i {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-.footer .footer-box-container .box {
+.footer .footer-box-container .footer-box {
   padding: 0 1rem;
 }
-.footer .footer-box-container .box h3 {
+.footer .footer-box-container .footer-box h3 {
   font-size: 1.1rem;
   padding-bottom: 1.2rem;
 }
-.footer .footer-box-container .box p {
+.footer .footer-box-container .footer-box p {
   font-size: 0.9rem;
   line-height: 2;
 }
-.footer .footer-box-container .box ul li {
+.footer .footer-box-container .footer-box ul li {
   display: flex;
   align-items: center;
 }
-.footer .footer-box-container .box ul li p {
+.footer .footer-box-container .footer-box ul li p {
   padding-left: 1rem;
 }
-.footer .footer-box-container .box .pembayaran img {
+.footer .footer-box-container .footer-box .pembayaran img {
   max-width: 225px;
 }
-.footer .footer-box-container .box .pembayaran p {
+.footer .footer-box-container .footer-box .pembayaran p {
   font-size: 0.95rem;
   padding: 1rem 0;
 }
-.footer .footer-box-container .box .btn {
+.footer .footer-box-container .footer-box .btn {
   margin: 0 0 1.5rem;
   padding: 1rem;
   font-size: 0.9rem;
   border-radius: 0.8rem;
 }
-.footer .footer-box-container .box .btn img {
+.footer .footer-box-container .footer-box .btn img {
   width: 2rem;
   margin-left: 0.25rem;
   vertical-align: middle;
 }
-.footer .footer-box-container .box .sosmed {
+.footer .footer-box-container .footer-box .sosmed {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.footer .footer-box-container .box .sosmed img {
+.footer .footer-box-container .footer-box .sosmed img {
   width: 2rem;
   height: 2rem;
 }
@@ -569,8 +569,8 @@ i {
 
 /* drop down */
 .dropdown-btn {
-  margin-top: 5rem;
-  padding: 50px 50px 35px;
+  margin-top: 7rem;
+  padding: 40px;
   display: flex;
   gap: 2.5rem;
   background-color: var(--light);
@@ -632,24 +632,27 @@ i {
 
 /* all card cars */
 .allcard-cars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 50px;
+  justify-items: center;
 }
 .allcard-cars .box {
   position: relative;
   text-align: center;
+  justify-content: center;
   border: var(--border);
   padding: 2rem;
   margin: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
   background: var(--gradient);
+  width: 100%;
+  max-width: 300px;
 }
 .allcard-cars .box img {
-  width: 17vw;
+  max-width: 100%;
 }
 .allcard-cars .box h3 {
   font-size: 1.25rem;
@@ -671,7 +674,7 @@ i {
   bottom: -1.5rem;
   transform: translateX(-50%);
   background-color: var(--darkblue);
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 3rem;
   border-radius: 2rem;
   cursor: pointer;
   white-space: nowrap;
@@ -680,9 +683,11 @@ i {
   background-color: var(--black);
 }
 
+/* detail mobil */
+
 /* caption slider */
 .capt-slider {
-  margin: 3rem 0 2rem;
+  margin: 3rem 0;
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
@@ -814,7 +819,7 @@ i {
 /* responsive */
 @media (max-width: 1024px) {
   html {
-    font-size: 65%;
+    font-size: 75%;
   }
   section {
     padding: 40px 30px;
@@ -857,8 +862,49 @@ i {
   }
 
   /* footer */
-  .footer .footer-box-container .box .pembayaran img {
-    max-width: 175px;
+  .footer .footer-box-container .footer-box .pembayaran img {
+    max-width: 160px;
+  }
+
+  /* daftar mobil */
+
+  /* dropdown */
+  .dropdown-btn .dropdown .select {
+    width: 170px;
+  }
+  /* all card cars */
+  .allcard-cars .box {
+    max-width: 250px;
+  }
+  .allcard-cars .box img {
+    max-width: 80%;
+  }
+  .allcard-cars .box .btn {
+    padding: 0.8rem 4rem;
+  }
+
+  /* detail-mobil */
+
+  /* caption slider */
+  .capt-slider .slides .slide .desc-slide img {
+    max-width: 120px;
+  }
+  .capt-slider .slides .slide .desc-slide p {
+    width: 350px;
+  }
+
+  /* detail mobil */
+  .car-detail {
+    padding-bottom: 75px;
+  }
+  .car-detail .border-detail .car-spec {
+    margin: 1rem 85px;
+  }
+  .car-detail .border-detail .pricing {
+    margin: 2rem 250px;
+  }
+  .car-detail .border-detail .btn {
+    max-width: 230px;
   }
 }
 
@@ -1054,14 +1100,50 @@ i {
   .footer {
     padding: 35px;
   }
-  .footer .footer-box-container .box .pembayaran img {
-    max-width: 125px;
+  .footer .footer-box-container .footer-box .pembayaran img {
+    max-width: 120px;
   }
-  .footer .footer-box-container .box .btn {
+  .footer .footer-box-container .footer-box .btn {
     font-size: 0.8rem;
   }
-  .footer .footer-box-container .box .btn img {
+  .footer .footer-box-container .footer-box .btn img {
     width: 1.8rem;
+  }
+
+  /* daftar mobil */
+
+  /* dropdown */
+  .dropdown-btn .dropdown .select {
+    width: 130px;
+  }
+  /* all card cars */
+  .allcard-cars .box {
+    max-width: 180px;
+  }
+
+  /* detail mobil */
+
+  /* caption slider */
+  .capt-slider .slides .slide .desc-slide img {
+    max-width: 100px;
+  }
+  .capt-slider .slides .slide .desc-slide p {
+    width: 280px;
+  }
+
+  /* detail mobil */
+  .car-detail {
+    padding-bottom: 50px;
+  }
+  .car-detail .border-detail .car-spec {
+    margin: 1rem 65px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .car-detail .border-detail .pricing {
+    margin: 2rem 180px;
+  }
+  .car-detail .border-detail .btn {
+    max-width: 170px;
   }
 }
 
@@ -1223,12 +1305,88 @@ i {
 
   /* footer */
   .footer {
-    padding: 30px;
+    padding: 20px;
   }
-  .footer .footer-box-container .box h3 {
+  .footer .footer-box-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .footer .footer-box-container .footer-box h3 {
     font-size: 1.4rem;
   }
-  .footer .footer-box-container .box .pembayaran img {
-    max-width: 100px;
+  .footer .footer-box-container .footer-box .pembayaran img {
+    max-width: 110px;
+  }
+
+  /* daftar mobil */
+
+  /* drop down */
+  .dropdown-btn {
+    gap: 1.5rem;
+    padding: 20px;
+  }
+  .dropdown-btn .dropdown .select {
+    width: 100px;
+  }
+  /* all car cards */
+  .allcard-cars {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+  .allcard-cars .box {
+    max-width: 150px;
+  }
+  .allcard-cars .box .btn {
+    padding: 0.8rem 2.5rem;
+  }
+
+  /* detail mobil */
+
+  /* caption slider */
+  .capt-slider .slides .slide .desc-slide {
+    padding: 1rem;
+  }
+  .capt-slider .slides .slide .desc-slide img {
+    max-width: 50px;
+  }
+  .capt-slider .slides .slide .desc-slide p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  /* detail mobil */
+  .car-detail {
+    padding-bottom: 30px;
+  }
+  .car-detail .border-detail {
+    margin: 0 1rem;
+    padding: 2.5rem;
+  }
+  .car-detail .border-detail .content-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .car-detail .border-detail .content-grid img {
+    padding: 0 3rem;
+  }
+  .car-detail .border-detail .content-grid .description {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .car-detail .border-detail .car-spec {
+    margin: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .car-detail .border-detail .pricing {
+    margin: 2rem 50px;
+  }
+  .car-detail .border-detail .btn {
+    max-width: 120px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .car-detail .btn-all {
+    margin: 1rem 0;
   }
 }

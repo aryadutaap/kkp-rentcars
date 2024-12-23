@@ -53,6 +53,7 @@ let changeBox = () => {
 
   for (let i = 0; i < activeBox.length; i++) {
     if (i == indexNo) {
+      // console.log(indexNo);
       activeBox[i].classList.add("active");
       if (window.screen.width > 768) {
         wrapper.style.transform = `translateX(${indexNo * -22.5}vw)`;
