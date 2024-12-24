@@ -323,7 +323,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0.5rem 1rem;
   background-color: var(--white);
   border: 2px solid var(--orange);
@@ -722,13 +722,13 @@ i {
 .capt-slider .slides .slide .desc-slide p {
   font-size: 1.3rem;
   font-weight: 600;
-  width: 450px;
+  width: 580px;
 }
 
 /* detail mobil */
 .car-detail {
   padding-top: 0;
-  padding-bottom: 100px;
+  padding-bottom: 00;
 }
 .car-detail .border-detail {
   position: relative;

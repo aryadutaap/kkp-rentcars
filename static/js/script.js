@@ -26,6 +26,32 @@ window.onload = () => {
   }
 };
 
+// button dropdown
+const dropdowns = document.querySelectorAll(".dropdown");
+dropdowns.forEach((dropdown) => {
+  const selectBtn = dropdown.querySelector(".select");
+  const options = dropdown.querySelectorAll(".option");
+  const sBtn_text = dropdown.querySelector(".selected");
+
+  selectBtn.addEventListener("click", () => {
+    dropdown.classList.toggle("active");
+    dropdowns.forEach((otherDropdown) => {
+      if (otherDropdown !== dropdown) {
+        otherDropdown.classList.remove("active");
+      }
+    });
+  });
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      let selectedOption = option.querySelector(".option-text").innerText;
+      sBtn_text.innerText = selectedOption;
+      dropdown.classList.remove("active");
+      console.log(selectedOption);
+    });
+  });
+});
+
 // card-cars
 let wrapper = document.querySelector(".wrapper-box");
 let activeBox = document.querySelectorAll(".box");
