@@ -816,6 +816,98 @@ i {
   vertical-align: middle;
 }
 
+/* tentang kami */
+
+.aboutme {
+  margin-top: 6.5rem;
+}
+.welcome,
+.why-us,
+.visi-misi {
+  padding-bottom: 0;
+}
+/* hero section */
+section.hero {
+  padding: 0;
+}
+section.hero img {
+  width: 100%;
+}
+/* Welcome Section */
+section.welcome {
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 0;
+}
+section.welcome p {
+  font-size: 1.15rem;
+}
+/* Why Us Section */
+section.why-us h3 {
+  text-align: center;
+  color: var(--darkblue);
+  margin-bottom: 0.5rem;
+}
+section.why-us ul {
+  list-style: none;
+  margin: 0 100px;
+  border: 2px solid var(--orange);
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+section.why-us li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+section.why-us li strong {
+  flex: 1;
+  color: var(--darkblue);
+}
+section.why-us li p {
+  flex: 2;
+  font-size: 1rem;
+  color: var(--gray);
+}
+/* Visi Misi Section */
+section.visi-misi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+section.visi-misi .card-visi,
+section.visi-misi .card-misi {
+  background: var(--white);
+  padding: 2rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+section.visi-misi h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #a5a5a5;
+}
+section.visi-misi p,
+section.visi-misi ul {
+  font-size: 1.05rem;
+  color: var(--gray);
+}
+section.visi-misi ul {
+  padding-top: 25px;
+}
+/* CTA Section */
+section.cta {
+  background-color: var(--orange2);
+  color: var(--white);
+  text-align: center;
+  padding: 50px;
+  margin-top: 75px;
+}
+section.cta p {
+  font-size: 1.1rem;
+}
+
 /* responsive */
 @media (max-width: 1024px) {
   html {
