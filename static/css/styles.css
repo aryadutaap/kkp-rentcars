@@ -836,11 +836,9 @@ section.hero img {
 /* Welcome Section */
 section.welcome {
   text-align: center;
-  padding: 50px;
-  padding-bottom: 0;
 }
 section.welcome p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 /* Why Us Section */
 section.why-us h3 {
@@ -858,6 +856,7 @@ section.why-us ul {
 section.why-us li {
   display: flex;
   align-items: flex-start;
+  font-size: 1.05rem;
   gap: 20px;
 }
 section.why-us li strong {
@@ -866,7 +865,7 @@ section.why-us li strong {
 }
 section.why-us li p {
   flex: 2;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--gray);
 }
 /* Visi Misi Section */
@@ -874,11 +873,12 @@ section.visi-misi {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
+  padding-bottom: 50px;
 }
 section.visi-misi .card-visi,
 section.visi-misi .card-misi {
   background: var(--white);
-  padding: 2rem;
+  padding: 2.2rem;
   border: var(--border);
   box-shadow: var(--box-shadow);
 }
@@ -902,10 +902,10 @@ section.cta {
   color: var(--white);
   text-align: center;
   padding: 50px;
-  margin-top: 75px;
 }
 section.cta p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 /* responsive */
@@ -914,7 +914,7 @@ section.cta p {
     font-size: 75%;
   }
   section {
-    padding: 40px 30px;
+    padding: 50px;
   }
   /* logo header */
   .logo img {
@@ -923,10 +923,11 @@ section.cta p {
 
   /* card-cars */
   .slider .wrapper .slide {
-    width: 13%;
+    width: 11%;
   }
   .slider .wrapper .wrapper2 {
-    margin-left: 15.75vw;
+    margin-left: 11.5vw;
+    width: 68vw;
   }
   .slider .wrapper .wrapper-box {
     gap: 2.5rem;
@@ -956,6 +957,9 @@ section.cta p {
   /* footer */
   .footer .footer-box-container .footer-box .pembayaran img {
     max-width: 160px;
+  }
+  .footer .footer-box-container .footer-box .btn {
+    font-size: 0.8rem;
   }
 
   /* daftar mobil */
@@ -997,6 +1001,12 @@ section.cta p {
   }
   .car-detail .border-detail .btn {
     max-width: 230px;
+  }
+
+  /* tentang kami */
+
+  section.visi-misi h3 {
+    font-size: 1.6rem;
   }
 }
 
@@ -1195,9 +1205,6 @@ section.cta p {
   .footer .footer-box-container .footer-box .pembayaran img {
     max-width: 120px;
   }
-  .footer .footer-box-container .footer-box .btn {
-    font-size: 0.8rem;
-  }
   .footer .footer-box-container .footer-box .btn img {
     width: 1.8rem;
   }
@@ -1237,11 +1244,21 @@ section.cta p {
   .car-detail .border-detail .btn {
     max-width: 170px;
   }
+  /* tentang kami */
+  section.welcome p {
+    font-size: 1.2rem;
+  }
+  section.why-us li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 45%;
+  }
+  section {
+    padding: 25px;
   }
 
   /* logo header */
@@ -1364,7 +1381,7 @@ section.cta p {
     text-align: center;
     gap: 1rem;
     margin: 0 3rem;
-    padding: 1rem 3rem;
+    padding: 1.5rem;
   }
   #carapesan .grid-container .grid-item img {
     margin: 0 auto 1rem;
@@ -1480,5 +1497,28 @@ section.cta p {
   }
   .car-detail .btn-all {
     margin: 1rem 0;
+  }
+
+  /* tentang kami */
+
+  section.welcome p {
+    font-size: 1.1rem;
+  }
+  section.why-us {
+    padding-bottom: 25px;
+  }
+  section.why-us ul {
+    margin: 0 10px;
+  }
+  section.visi-misi ul {
+    padding-top: 15px;
+  }
+  section.visi-misi .card-visi,
+  section.visi-misi .card-misi {
+    margin: 0 10px;
+  }
+  section.cta {
+    padding: 25px;
+    text-align: justify;
   }
 }
