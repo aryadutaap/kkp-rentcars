@@ -25,7 +25,6 @@
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
-  /* text-transform: capitalize; */
   transition: all 0.3s linear;
 }
 
@@ -447,7 +446,7 @@ i {
 
 /* review */
 .reviews {
-  padding: 30px 250px;
+  padding: 50px 250px;
   border-radius: var(--border);
 }
 .reviews h1 {
@@ -471,12 +470,14 @@ i {
 .review .user-info {
   display: inline-flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .review .user-info .user-initial {
   font-weight: bold;
   color: var(--black);
   flex-shrink: 0;
+  width: 100px;
+  text-align: center;
 }
 .review .user-info .stars {
   color: var(--orange2);
@@ -634,7 +635,7 @@ i {
 .allcard-cars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 50px;
   justify-items: center;
 }
@@ -945,7 +946,7 @@ section.cta p {
 
   /* reviews */
   .reviews {
-    padding: 25px 200px;
+    padding: 50px 200px;
   }
 
   /* location */
@@ -1182,7 +1183,7 @@ section.cta p {
 
   /* reviews */
   .reviews {
-    padding: 30px 150px;
+    padding: 50px 150px;
   }
 
   /* location */
