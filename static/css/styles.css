@@ -1185,6 +1185,9 @@ section.cta p {
   .reviews {
     padding: 50px 150px;
   }
+  .review .user-info .user-initial {
+    width: 75px;
+  }
 
   /* location */
   .location .col {
@@ -1341,9 +1344,6 @@ section.cta p {
   }
 
   /* syarat & cara */
-  .syarat-cara {
-    padding-top: 2rem;
-  }
   .card-syarat-cara {
     margin: 2rem 40px;
   }
@@ -1356,11 +1356,11 @@ section.cta p {
     padding: 1.5rem;
   }
   .tab-content #syaratpesan h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-bottom: 0.5rem;
   }
   .tab-content #syaratpesan ul {
-    padding: 1.5rem 3rem;
+    padding: 2rem;
   }
   .tab-content #syaratpesan p {
     padding: 0.5rem;
@@ -1369,20 +1369,21 @@ section.cta p {
 
   .tab-content #carapesan {
     padding: 1.5rem;
+    padding-bottom: 5rem;
   }
   .tab-content #carapesan h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-bottom: 2rem;
   }
   #carapesan .grid-container {
-    gap: 1.5rem;
+    gap: 2rem;
   }
   #carapesan .grid-container .grid-item {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 1rem;
     margin: 0 3rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
   }
   #carapesan .grid-container .grid-item img {
     margin: 0 auto 1rem;
@@ -1399,6 +1400,9 @@ section.cta p {
   /* reviews */
   .reviews {
     padding: 3rem 35px;
+  }
+  .review .user-info .user-initial {
+    width: 50px;
   }
   .review .user-info .stars {
     font-size: 1.3rem;
